@@ -1,2 +1,1 @@
-# ng-pwa-demo
-Angular pwa demo
+# Mien project demo
