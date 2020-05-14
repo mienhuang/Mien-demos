@@ -1,0 +1,9 @@
+<div class="container">
+    <header>撸猫顺序</header>
+    <div class="board" (dragstart)="ondragstart($event)" (dragover)="ondragover($event)"
+        (dragenter)="ondragenter($event)" (dragleave)="ondragleave($event)" (dragexit)="ondragexit($event)"
+        (dragend)="ondragend($event)" (drop)="ondrop($event)">
+        <div draggable="true" class="item" *ngFor="let cat of luList; index as i" [attr.name]="cat.name" [attr.index]="i">{{cat.label}}
+        </div>
+    </div>
+</div>

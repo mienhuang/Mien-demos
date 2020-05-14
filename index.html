@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            display: flex;
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .img {
+            width: 100%;
+        }
+
+        .boxs {
+            flex: 1;
+            z-index: 1;
+            padding-top: 20vh;
+            flex-direction: column;
+
+        }
+
+        .box {
+            padding: 10px;
+            display: flex;
+        }
+
+        .cell {
+            flex: 1;
+            background-color: #ea644a;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .flex2 {
+            flex: 2;
+        }
+
+        .flex3 {
+            flex: 3;
+        }
+        .flex-c{
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg">
+            <img class="img" src="./bg.jpg" alt="">
+        </div>
+        <div class="boxs flex">
+            <div class="box flex3">
+                <div class="box flex1">
+                    <div class="cell"></div>
+                </div>
+                <div class="box flex-c flex1">
+                    <div class="box flex1">
+                        <div class="cell"></div>
+                    </div>
+                    <div class="box flex1">
+                        <div class="cell"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box flex2">
+                <div class="cell"></div>
+            </div>
+            <div class="box flex2">
+                <div class="cell"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
